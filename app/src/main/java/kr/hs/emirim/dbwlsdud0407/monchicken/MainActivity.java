@@ -1,11 +1,14 @@
 package kr.hs.emirim.dbwlsdud0407.monchicken;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import javax.xml.transform.Result;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
     EditText mName;
@@ -35,5 +38,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View v) {
         Toast.makeText(this, "맛있는 치킨", Toast.LENGTH_LONG).show();
+        Intent intent = new Intent(this, ResultActivity.class);
+        startActivity(intent);
     }
 }
