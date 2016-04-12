@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 //            startActivity(intent);
 //        }
         try {
-            Toast.makeText(this, name + "씨 배고파요", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, name + "씨 사랑해요", Toast.LENGTH_LONG).show();
             Intent intent = new Intent(this, ResultActivity.class);
             intent.putExtra("name", name);
             intent.putExtra("age",10);

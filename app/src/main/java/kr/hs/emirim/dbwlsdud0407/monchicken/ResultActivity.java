@@ -27,7 +27,7 @@ public class ResultActivity extends AppCompatActivity {
         Log.d(TAG,"결과 액티비티 출력");
 
         Random r=new Random();
-        int result=r.nextInt(2);
+        int result=r.nextInt(3);
         Log.d(TAG,"랜덤값 생성 :" +result);
 
         mImageView.setImageResource(R.drawable.c01+result);
