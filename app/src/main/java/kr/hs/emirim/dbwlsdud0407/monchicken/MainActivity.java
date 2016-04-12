@@ -27,6 +27,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     protected void onResume() {  //액티비티가 다시 시작되었을때
         super.onResume();
         mName.setText(null);
+        overridePendingTransition(R.anim.slide_in_rigth, R.anim.slide_out_left);
 
     }
 
